@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Edgars Pujats" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer></script>
+    <!-- only lightweight library u will ever find in my code -->
+    <script src="vanilla-tilt.js" defer></script>
+    <title>Edgar's portfolio</title>
+  </head>
+  <body>
+    <div class="bookmark" id="home-bookmark"></div>
+    <div class="home-section" id="home-bookmark">
+      <!-- navigation -->
+      <nav>
+        <!-- language buttons -->
+        <div class="languages">
+          <a href="#" language="english"
+            ><img
+              src="./pictures/language-icons/english-flag.jpg"
+              alt="english flag"
+              width="35px"
+              height="35px"
+              class="active"
+          /></a>
+          <a href="#" language="latvian"
+            ><img
+              src="./pictures/language-icons/latvian-flag.jpg"
+              alt="latvian flag"
+              width="35px"
+              height="35px"
+          /></a>
+        </div>
+
+        <!-- link list -->
+        <ul>
+          <li>
+            <a href="#home-bookmark" class="multilingual" id="homeLink">Home</a>
+          </li>
+          <li>
+            <a href="#skills-bookmark" class="multilingual" id="skillsLink"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="#projects-bookmark" class="multilingual" id="projectsLink"
+              >Projects</a
+            >
+          </li>
+        </ul>
+        <!-- mobile menu -->
+        <div class="menu">
+          <i class="fas fa-bars"></i>
+          <div class="menu-nav">
+            <ul id="menu-links">
+              <li>
+                <a href="#home-bookmark" class="multilingual" id="homeLink"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#skills-bookmark" class="multilingual" id="skillsLink"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects-bookmark"
+                  class="multilingual"
+                  id="projectsLink"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- home content -->
+      <div class="home-content">
+        <h1 class="multilingual" id="homeTitle"></h1>
+        <h2 class="multilingual" id="homeSubtitle"></h2>
+      </div>
+
+      <div class="button multilingual" id="homeButton"></div>
+      <div class="portfolio-bg-picture">
+        <img
+          src="./pictures/portfolio-picture.png"
+          alt="developer edgar"
+          width="240px"
+        />
+      </div>
+    </div>
+    <!-- skills section -->
+    <div class="bookmark" id="skills-bookmark"></div>
+    <div class="skills-section">
+      <h3 class="multilingual" id="skillsSection"></h3>
+      <h1 class="multilingual animate-appear" id="skillsTitle"></h1>
+      <h2 class="multilingual animate-appear" id="skillsSubtitle"></h2>
+      <div class="dev-tools">
+        <img src="./pictures/dev-icons/html5-original.svg" alt="html icon" />
+        <img src="./pictures/dev-icons/css3-original.svg" alt="css icon" />
+        <img src="./pictures/dev-icons/sass-original.svg" alt="sass icon" />
+        <img src="./pictures/dev-icons/javascript-original.svg" alt="js icon" />
+        <img src="./pictures/dev-icons/mysql-original.svg" alt="sql icon" />
+        <img src="./pictures/dev-icons/php-original.svg" alt="php icon" />
+        <img src="./pictures/dev-icons/vscode-original.svg" alt="vscode icon" />
+        <img src="./pictures/dev-icons/github-original.svg" alt="github icon" />
+      </div>
+    </div>
+    <!-- projects section -->
+    <div class="bookmark" id="projects-bookmark"></div>
+    <div class="projects-section">
+      <h3 class="multilingual" id="projectsSection"></h3>
+      <h1 class="multilingual animate-appear" id="projectsTitle"></h1>
+      <h2 class="multilingual animate-appear" id="projectsSubtitle"></h2>
+      <!-- list is for mobile -->
+      <div class="project-list">
+        <!-- project 1 -->
+        <div class="project animate-appear">
+          <a href="https://edgarsfrontend.github.io/Hangman-game/"
+            ><h4 class="multilingual" id="hangmanSiteTitle"></h4
+          ></a>
+          <a href="https://edgarsfrontend.github.io/Hangman-game/">
+            <img
+              src="./pictures/works/works1.jpg"
+              alt="hangman game"
+              width="100%"
+          /></a>
+          <p class="multilingual" id="hangmanSiteDescription"></p>
+        </div>
+
+        <!-- project 2 -->
+        <div class="project animate-appear">
+          <a href="http://ieluvingrotaji.id.lv/blogs.php"
+            ><h4 class="multilingual" id="blogSiteTitle"></h4
+          ></a>
+          <a href="http://ieluvingrotaji.id.lv/blogs.php"
+            ><img
+              src="./pictures/works/works2.jpg"
+              alt="blog site"
+              width="100%"
+          /></a>
+          <p class="multilingual" id="blogSiteDescription"></p>
+        </div>
+
+        <!-- project 3 -->
+        <div class="project animate-appear">
+          <a href="https://edgarsfrontend.github.io/tattoo/"
+            ><h4 class="multilingual" id="tattooSiteTitle"></h4
+          ></a>
+
+          <a href="https://edgarsfrontend.github.io/tattoo/"
+            ><img
+              src="./pictures/works/works3.jpg"
+              alt="tattoo site"
+              width="100%"
+          /></a>
+          <p class="multilingual" id="tattooSiteDescription"></p>
+        </div>
+      </div>
+
+      <!-- slider is for desktop -->
+      <div class="slider">
+        <div class="image-window">
+          <div class="project-info">
+            <div class="project-title"><h4></h4></div>
+            <div class="project-description"><p></p></div>
+          </div>
+          <img src="./pictures/works/works1.jpg" alt="project" width="100%" />
+          <div class="arrow left"><i class="fas fa-caret-left"></i></div>
+          <div class="arrow right"><i class="fas fa-caret-right"></i></div>
+        </div>
+        <div class="indication-dots"></div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="contacts">
+        <div class="phone">
+          <a href="tel:+371 27878291"
+            ><i class="fas fa-phone-alt"></i>+371 27878291</a
+          >
+        </div>
+        <div class="email">
+          <a href="mailto: ep98@inbox.lv"
+            ><i class="far fa-envelope"></i>ep98@inbox.lv</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
